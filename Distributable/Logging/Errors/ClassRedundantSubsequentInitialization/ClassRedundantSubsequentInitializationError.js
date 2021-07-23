@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const ClassRedundantSubsequentInitializationErrorLocalization__English_1 = require("./ClassRedundantSubsequentInitializationErrorLocalization__English");
+import ClassRedundantSubsequentInitializationErrorLocalization__English from "./ClassRedundantSubsequentInitializationErrorLocalization__English";
 class ClassRedundantSubsequentInitializationError extends Error {
     constructor(parametersObject) {
         super();
@@ -9,9 +7,7 @@ class ClassRedundantSubsequentInitializationError extends Error {
             this.message = parametersObject.customMessage;
         }
         else {
-            this.message = ClassRedundantSubsequentInitializationError.localization.genericDescriptionPartTemplate({
-                className: parametersObject.className
-            });
+            this.message = ClassRedundantSubsequentInitializationError.localization.genericDescriptionPartTemplate(parametersObject);
         }
     }
     static get DEFAULT_TITLE() {
@@ -22,5 +18,5 @@ class ClassRedundantSubsequentInitializationError extends Error {
     }
 }
 ClassRedundantSubsequentInitializationError.NAME = "RedundantSubsequentClassInitializationError";
-ClassRedundantSubsequentInitializationError.localization = ClassRedundantSubsequentInitializationErrorLocalization__English_1.default;
-exports.default = ClassRedundantSubsequentInitializationError;
+ClassRedundantSubsequentInitializationError.localization = ClassRedundantSubsequentInitializationErrorLocalization__English;
+export default ClassRedundantSubsequentInitializationError;

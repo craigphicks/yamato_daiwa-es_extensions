@@ -63,7 +63,7 @@ import isNegativeDecimalFraction from "./TypeGuards/Numbers/isNegativeDecimalFra
 import isNegativeInteger from "./TypeGuards/Numbers/isNegativeInteger";
 import isNegativeIntegerOrZero from "./TypeGuards/Numbers/isNegativeIntegerOrZero";
 import isNonNegativeInteger from "./TypeGuards/Numbers/isNonNegativeInteger";
-import isNumber from "./TypeGuards/Numbers/isNumber";
+export { default as isNumber } from "./TypeGuards/Numbers/isNumber";
 import isPositiveDecimalFraction from "./TypeGuards/Numbers/isPositiveDecimalFraction";
 
 /* --- Strings ------------------------------------------------------------------------------------------------------ */
@@ -88,7 +88,7 @@ import isNeitherUndefinedNorNull from "./TypeGuards/Nullables/isNeitherUndefined
 import isNotNull from "./TypeGuards/Nullables/isNotNull";
 import isNotUndefined from "./TypeGuards/Nullables/isNotUndefined";
 import isNull from "./TypeGuards/Nullables/isNull";
-import isUndefined from "./TypeGuards/Nullables/isUndefined";
+export { default as isUndefined } from "./TypeGuards/Nullables/isUndefined";
 
 /* --- Others ------------------------------------------------------------------------------------------------------- */
 import isBoolean from "./TypeGuards/isBoolean";
@@ -252,7 +252,6 @@ export {
   isNegativeInteger,
   isNegativeIntegerOrZero,
   isNonNegativeInteger,
-  isNumber,
   isPositiveDecimalFraction,
 
   /* --- Strings ---------------------------------------------------------------------------------------------------- */
@@ -279,7 +278,6 @@ export {
   isNotNull,
   isNotUndefined,
   isNull,
-  isUndefined,
 
   /* --- Others ----------------------------------------------------------------------------------------------------- */
   isBoolean,

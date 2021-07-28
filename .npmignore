@@ -2,7 +2,7 @@
 .eslintrc.yaml
 .gitignore
 .mocharc.yaml
-tsconfig.test.ts
+tsconfig.test.json
 
 .idea/
 
